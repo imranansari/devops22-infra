@@ -3,7 +3,6 @@ pipeline {
     buildDiscarder(logRotator(numToKeepStr: "5"))
     disableConcurrentBuilds()
     skipDefaultCheckout()
-    timestamps()
   }
   agent {
     label "prod"
